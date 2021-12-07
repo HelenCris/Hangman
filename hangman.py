@@ -10,8 +10,7 @@ lives = 6
 
 from hangman_art import logo, stages
 print(logo)
-#Testing code
-print(f'Pssst, the solution is {chosen_word}.')
+
 print(stages[6])
 
 
@@ -44,10 +43,8 @@ while not end_of_game:
             print(stages[lives])
             print(f"You guessed {guess}, that's not in the word. You lose a life.")
 
-    #Join all the elements in the list and turn it into a String.
     print(f"{' '.join(display)}")
 
-    #Check if user has got all letters.
     if "-" not in display:
         end_of_game = True
         print("You win.")
